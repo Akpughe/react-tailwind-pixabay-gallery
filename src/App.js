@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="container mx-auto">
       <Search searchText={(text) => setTerm(text)} />
-      {!isLoading && images.length == 0 && (
+      {!isLoading && images.length === 0 && (
         <h1 className="text-6xl text-center mx-auto mt-32">No Images Found</h1>
       )}
       {isLoading ? (
